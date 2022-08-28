@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+.navBar {
+  padding: 12px;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  background-color: rgb(56, 192, 238);
+}
+#nav-title {
+  text-decoration: none;
+  font: 24px bold;
+  color: white;
+}
+.modal {
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 325px;
+  display: none;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+#recordDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 0.5em 0;
+}
+#recordDetails label,
+#recordDetails button,
+table {
+  font-size: large;
+}
+#recordDetails input {
+  font-size: medium;
+}
+#recordDetails button {
+  padding: 4px;
+  font-weight: bold;
+  background-color: rgb(26, 221, 26);
+  border-radius: 4px;
+}
+#recordDetails span {
+  font-size: small;
+  color: red;
+  align-self: flex-end;
+}
+.close {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  background-color: transparent;
+  border: 0;
+}
+.col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em;
+}
+.m-0 {
+  margin: 0;
+}
+.p-1 {
+  padding: 1em;
+}
+.w-4 {
+  width: 400px;
+}
+.bg-black {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+table {
+  width: inherit;
+  text-align: center;
+  border: 2px solid black;
+}
+.del {
+  color: white;
+  background-color: rgb(245, 57, 57);
+  border-radius: 4px;
+}
+#addBtn {
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(11, 148, 233);
+  border: 2px solid rgb(11, 148, 233);
+  border-radius: 4px;
+  background-color: transparent;
+}
+#jsonView {
+  height: 400px;
+  color: yellowgreen;
+}
